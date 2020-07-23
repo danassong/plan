@@ -1,3 +1,64 @@
 @charset "utf-8";
 @import "reset.css";
 @import "common.css";
+
+::placeholder { color: blueviolet;}
+#loginpage {
+    padding: 217px 0 100px;
+}
+#loginpage h2 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: -1px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+#loginpage .comment {
+    font-size: 14px;
+    text-align: left;
+    margin: 0 150px 50px 0;
+    display: inline-block;
+}
+#loginpage .login_cont{
+    padding: 150px 0;
+    background: #f8f9fa;
+    text-align: center;
+    margin-top: 20px;
+}
+#loginpage .login_cont .idpw_box{
+    display: inline-block;
+    margin-right: 5px;
+}
+#loginpage .login_cont .idpw_box label{
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+    line-height: 40px;
+    margin: 10px 0;
+    vertical-align: top;
+}
+#loginpage .login_cont .idpw_box input {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 1em;
+    margin: 10px 0;
+}
+#loginpage .login_cont button {
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    color: #fff;
+    vertical-align: top;
+    margin: 10px 0 0 10px;
+}
+#loginpage .login_form .check {
+    margin: 20px 370px 20px;
+    text-align: center;
+}
+#loginpage .login_cont .check label {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #666;
+}

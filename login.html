@@ -13,7 +13,7 @@
         <div class="topmenu row">
             <a href="index.html">Home</a>
             <a href="contact.html">Contact</a>
-            <a href="#">Admin</a>
+            <a href="login.html">Admin</a>
         </div>
         <div class="logonavwrap">
             <div class="logonav row">
@@ -61,7 +61,35 @@
         </div>
     </header>
     <section id="loginpage">
-        
+        <div class="loginbox row">
+            <h2>로그인</h2>
+            <form action="#" method="POST" class="login_form">
+                <fieldset>
+                    <legend>로그인</legend>
+                    <div class="login_cont">
+                        <p class="comment">
+                            ※ ID와 PW를 입력하세요.<br>
+                            ※ 아직 등록하지 않으셨다면 회원가입하세요.
+                        </p><br>
+                        <div class="idpw_box">
+                            <label for="id_lbl">ID</label>
+                            <input type="text" placeholder="아이디" id="id_lbl"><br>
+                            <label for="pw_lbl">PW</label>
+                            <input type="password" placeholder="비밀번호" id="pw_lbl">
+                        </div>
+                        <button type="submit">
+                            Login
+                        </button>
+                        <div class="check">
+                            <input type="checkbox" id="idsave" value="idsave" checked>
+                            <label for="idsave">아이디저장</label>
+                            <input type="checkbox" id="secacc" value="secacc">
+                            <label for="secacc">보안접속</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </section>
     <footer id="footer">
         <div class="inner row cf">
