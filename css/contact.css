@@ -35,6 +35,7 @@
 
 .contactform .contact_content,
 .contactform .contact_content input[type=text],
+.contactform .contact_content input[type=tel],
 .contactform .contact_content input[type=file],
 .contactform .contact_content select {
     padding: 10px 0;
