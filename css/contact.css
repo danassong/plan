@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+::placeholder { color: blueviolet;}
+#contactpage {
+    padding: 217px 0 100px;
+}
+#contactpage h2 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: -1px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+#contactpage .row {
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+#contactpage li {
+    padding-bottom: 10px;
+}
+
+.contactform .tit_lbl {
+    display: inline-block;
+    width: 20%;
+    line-height: 45px;
+    font-size: 14px;
+    padding-left: 20px ;
+    /* letter-spacing: -2px; */
+    font-weight: bold;
+}
+
+.contactform .contact_content,
+.contactform .contact_content input[type=text],
+.contactform .contact_content input[type=file],
+.contactform .contact_content select {
+    padding: 10px 0;
+    background: #f8f9fa;
+    border: none;
+    padding-left: 1em;
+    width: 96%;
+}
+
+.h120 {
+    height: 120px;
+}
+
+.contactform .btn {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.contactform .btn input {
+    width: 230px;
+    height: 60px;
+    background: #3278ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 16px 30px;
+    margin: 0 5px;
+}
+
+.contactform .btn input[type=reset] {
+    background: #adb5bd;
+}

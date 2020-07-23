@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+#header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px #ccc ;
+    /* 숫자높을수록 위로 올라옴 */
+    z-index: 999;
+}
+
+.topmenu {
+    text-align: right;
+    font-size: 11px;
+    color: #6c6c6c;
+    padding: 9px;
+}
+
+.topmenu a:hover {
+    color: #111
+}
+.topmenu a {
+    position: relative;
+    padding: 0 11px;   
+}
+
+.topmenu a:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 7px;
+    background: #ccc;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.topmenu > a:first-child:before {
+    display: none;
+}
+
+.logonavwrap {
+    border-top: 1px solid #dedede;
+}
+
+.logonav {
+    position: relative;
+    height: 103px;
+}
+
+.logonav h1 {
+    font-size: 26px;
+    line-height: 1;
+    color: #000;
+    letter-spacing: 1;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.logonav h1 span {
+    font-size: 14px;
+    display: block;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.logonav .nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.logonav .nav .depth1 > li > a:hover {
+    color: #999;
+}
+
+.logonav .nav .depth1 > li {
+    display: inline-block;
+    position: relative;
+}
+
+.logonav .nav .depth1 > li > a {
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 50px;   
+    margin-top: 38px;
+    /* border-left: 1px solid #d2d3d5; */
+}
+
+.logonav .nav .depth1 > li > a:before {
+    content: "";
+    width: 1px;
+    height: 17px;
+    background: #d2d3d5;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logonav .nav .depth1 > li:first-child > a:before {
+    display: none;
+}
+
+.logonav .nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* left: -50px; */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 13px 24px;
+    font-size: 13px;
+    display: none;
+    /* opacity: 0; */
+}
+
+.logonav .nav .depth1 > li:hover .depth2 {
+    display: block;
+    /* left: 0px;
+    opacity: 1; */
+}
+
+.logonav .nav .depth2 > li {
+    /* padding: 9px 5px; */
+    line-height: 31px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.logonav .nav .depth2 > li:first-child {
+    border: none;
+}
+
+.logonav .nav .depth2 > li:hover {
+    color: rgba(0, 0, 0, 0.25);
+    text-indent: 1em;
+    transition: all 0.5s;
+}
+
+
+/* footer */
+#footer {
+    background-color: #111;
+    color: #666;
+    padding: 50px 0 60px;
+}
+
+#footer .inner {
+    position: relative;
+}
+
+#footer .footermenu {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+#footer .footermenu a {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0 45px 1px;
+}
+
+#footer .footermenu a:last-child {
+    border-right: none;
+}
+
+#footer .footermenu a:hover {
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+#footer .companyinfo {
+    padding-top: 35px;
+}
+
+#footer .companyinfo .bizinfo {
+    font-size: 13px;
+    float: left;
+    width: 68%;
+}
+
+#footer .companyinfo .bizinfo span {
+    /* border-right: 1px solid rgba(255, 255, 255, 0.2); */
+    padding: 0 5px 0 10px;
+    line-height: 2;
+    position: relative;
+}
+
+#footer .companyinfo .bizinfo span:before {
+    content: '|';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#footer .bizinfo span:first-child:before,
+#footer .bizinfo span:nth-child(6):before {
+    visibility: hidden;
+    padding-left: 0;
+}
+
+#footer .companyinfo span.detailaddr::before {
+    display: none;
+    padding: 0;
+}
+
+#footer .companyinfo span.detailaddr {
+    margin-left: -10px;
+}
+
+
+#footer .companyinfo .bizinfo span a:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+#footer .companyinfo .sns {
+    float: right;
+    width: 32%;
+    font-size: 11px;
+    text-align: right;
+}
+
+#footer .companyinfo .snsalign {
+    text-align: center;
+    display: inline-block;
+}
+
+#footer .companyinfo .sns .icon {
+    margin-top: 10px;
+    vertical-align: top;
+    letter-spacing: 5px;
+    display: inline-block;
+}
