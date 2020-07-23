@@ -44,6 +44,16 @@
     padding-left: 1em;
     width: 96%;
 }
+#contactpage .contact_content select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: url(../images/select_arrow_down.png) no-repeat 96% center;
+}
+select::-ms-expand {
+    display: none;
+}
 
 .h120 {
     height: 120px;
