@@ -2,7 +2,6 @@
 @import "reset.css";
 @import "common.css";
 
-::placeholder { color: blueviolet;}
 #contactpage {
     padding: 217px 0 100px;
 }
