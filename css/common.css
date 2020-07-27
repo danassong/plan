@@ -49,7 +49,8 @@
     transform: translateY(-50%);
 }
 
-.topmenu > a:first-child:before {
+/* 이름이 다른 형제가 존재하면 -child가 아닌 type 첫번째 */
+.topmenu > a:first-of-type:before {
     display: none;
 }
 
@@ -76,6 +77,11 @@
     display: block;
     letter-spacing: 2px;
     color: #666;
+}
+
+.logonav .open_nav,
+.logonav .close_nav {
+    display: none;
 }
 
 .logonav .nav {
